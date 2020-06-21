@@ -66,6 +66,8 @@ if($_COOKIE['login'] == ''){
                     $('#article_send').text('Done'); // в случае успеха на кнопке выведится done
                     $('#errorBlock').hide();  // скрывается блок с ошибкой
                     $('#article_send').css("margin-top" , "20px");
+
+
                 }
                 else
                     $('#errorBlock').show(); //  в случае ошибки выведится блок с ошибкой

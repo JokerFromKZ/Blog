@@ -24,7 +24,7 @@
     $pass = md5($pass . $hash);  // кодируем наш пароль и добоваляем хеш
 
     require_once '../mysql_connect.php';
-    $sql = 'INSERT INTO users(name, email , login , pass) VALUES (? , ? , ? , ?)'; // подключаемся к базе юзер и добавляем определенные данные
+    $sql = 'INSERT INTO users( name , email , login , pass) VALUES (? , ? , ? , ?)'; // подключаемся к базе юзер и добавляем определенные данные
     $query =  $pdo->prepare($sql); // подготовляем наш запрос
     $query->execute([$username, $email, $login, $pass]); // вставляем наши данные
 

@@ -64,6 +64,7 @@
                     $('#reg_user').text('Done'); // в случае успеха на кнопке выведится done
                     $('#errorBlock').hide();  // скрывается блок с ошибкой
                     $('#reg_user').css("margin-top" , "20px");
+                    location.href = 'auth.php';
                 }
                 else
                     $('#errorBlock').show(); //  в случае ошибки выведится блок с ошибкой
